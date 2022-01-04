@@ -1,22 +1,52 @@
+:root {
+    /* Paleta de cores */
+    --cor1: #f9f9f9;
+    --cor2: #02243C;
+    --cor3: #FFBA08;
+    --cor4: #FED223;
+    --cor5: #9D9C9C;
+}
+
+
 body {
+    background-color: var(--cor1);
+    color: var(--cor2);
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: #f9f9f9;
-    color: #02243C;
     margin: 0px;
 }
 
-p {
-    text-align: justify;
-    margin: 0% 3%;
+h1, h2{
+    font-size: 2.25em;
+    text-align: center;
 }
 
-h1, h2, h3 {
-    text-align: center;
+h1 {
+    color: var(--cor3);
+}
+
+h2 {
+    color: var(--cor4);
+}
+
+p {
+    font-size: 1.15em;
+    text-align: justify;
+    margin: 0% 50px;
+}
+
+b {
+    color: var(--cor5);
+}
+
+img {
+    max-width: 750px;
+    width: 100%;
 }
 
 .mapa {
     display: flex;
     justify-content: center;
+    margin: 0% 15px;
 }
 
 #paragrafoFooter {
@@ -25,7 +55,10 @@ h1, h2, h3 {
 }
 
 footer {
-    background-color: #9D9C9C;
-    color: #f9f9f9;
+    background-color: var(--cor5);
+    color: var(--cor1);
+    position: relative;
+    bottom: 0px;
+    margin-top: 10px;
     padding: 1%;
 }
